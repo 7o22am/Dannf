@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taheed</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="body">
+
+    <div class="ml-2 mr-2">
+        <ul class="nav justify-content-end ">
+            <li class="nav-item">
+                <a class="nav-link" onclick="goControls()">لوحة التحكم</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="goRegist()">التسجيل</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="gologin()">تسجيل الدخول</a>
+            </li>
+
+        </ul>
+    </div>
+
+
+    <div id="register">
+
+        <div class="container " id="clickForReg" onclick="clickForReg ">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="phone-border">
+                        <div class="container phone-screen mt-5">
+                            <div class="title2 p-1 align-items-center d-flex" dir="rtl">
+                                <div class="img">
+                                    <img src="/Annotation_2024-06-09_184912-removebg-preview.png" alt="" class="w-100">
+                                </div>
+                                <div class="">
+                                    <h3 class="">تعـهـيد</h3>
+                                    <p class="">للاعمال</p>
+                                </div>
+                            </div>
+                            <div class="hello d-flex" dir="rtl">
+                                <p>اهلا و سهلا</p>
+                            </div>
+                            <div class="show w-100 h-50" dir="rtl">
+                                <h3 class="pt-2">
+                                    بكل بساطه
+                                </h3>
+                                <h5 class="p-0 m-0">
+                                    اشتري دباب واجره
+                                </h5>
+                                <br>
+                                <p class="mt-2">من خلالنا</p>
+                                <p>علي شركـات معتمدة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6   align-items-center">
+                    <div class="title" dir="rtl">
+                        <div class="">
+                            <h1>
+                                أول منصــة تتيــــح للأفــراد
+                                <br>تقديم خدمات للشـركـات
+                                <br>الـمعـتمــدة
+                            </h1>
+                        </div>
+                        <div class="container2 d-flex justify-content-center align-items-center h-100">
+                            <div class="box1 rounded-bottom transform-rotate-45"></div>
+                            <div class="box2 rounded-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="continer" id="clickForCom" style='display:none'>
+            <div class="d-flex  justify-content-center  w-90    bnr" dir="rtl">
+                <div class="d-flex  justify-content-between  ">
+                    <p>خطوات التسجيل</p>
+                    <p>تعـهـيد</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="data" id="section1" style='display:none'>
+            <div class="phone-border brColor">
+                <div class="container phone-screen  mt-5">
+                    <div class="hello2 d-flex flex-column align-items-start  " dir="rtl">
+                        <p>اهلا و سهلا</p>
+                        <p>من هنا خطوتك الأولـى لشراء
+                            دراجة نارية ثم تأجيـرها على شركات
+                            معتمدة من خلالنــا</p>
+
+                        <input class="form-controlw mt-5" type="email" id="email" required
+                            placeholder="ادخل بريدك الالكـتـرونـي">
+                        <button type="button " onclick="next1()" class="btn btn-primary mt-5"> &nbsp;&nbsp; التــالــي
+                            &nbsp;&nbsp;
+                            &nbsp;&nbsp; <i style="font-size:24px" class="fa"> &#xf104;</i>&nbsp;&nbsp;
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="data" id="section2" style='display:none'>
+            <div class="phone-border brColor">
+                <div class="container phone-screen  mt-5">
+                    <div class="hello2 d-flex flex-column align-items-start  " dir="rtl">
+                        <p class="mt-5">وصلك كود التحقق
+                            على بريدك الالكتـرونـي ؟</p>
+
+
+                        <input class="form-controlw mt-5" type="text" id="code" placeholder="  ادخل كــــود التحقـق">
+
+
+                        <button type="button " onclick="next2()" class="btn btn-primary mt-5"> &nbsp;&nbsp; التــالــي
+                            &nbsp;&nbsp;
+                            &nbsp;&nbsp; <i style="font-size:24px" class="fa"> &#xf104;</i>&nbsp;&nbsp;
+                        </button>
+                        <p class="remail mt-3">دخلت بريد الكتروني خاطئ ؟تقدر تعدله من <span
+                                onclick="backmail()"><u>هنا</u></span></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="data" id="section3" style='display:none'>
+            <div class="phone-border brColor">
+                <div class="container phone-screen  mt-5">
+                    <div class="hello2 d-flex flex-column align-items-start  " dir="rtl">
+                        <p class="mt-5">نحتـــاج رقم جوالــك</p>
+
+
+                        <input class="form-controlw mt-5" type="number" id="number" placeholder="ادخل رقم جوالك">
+
+
+                        <button type="button " onclick="next3()" class="btn btn-primary mt-5"> &nbsp;&nbsp; التــالــي
+                            &nbsp;&nbsp;
+                            &nbsp;&nbsp; <i style="font-size:24px" class="fa"> &#xf104;</i>&nbsp;&nbsp;
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="data" id="section4" style='display:none'>
+            <div class="phone-border brColor">
+                <div class="container phone-screen  mt-5">
+                    <div class="hello2 d-flex flex-column align-items-start  " dir="rtl">
+                        <p class="mt5">
+                            تهمنا البيانات التالية
+                            عشان العقــد
+                        </p>
+
+
+                        <input class="form-controlw mt-5" type="text" id="userName" placeholder="  اسمــك الثلاثــي  ">
+                        <input class="form-controlw mt-3" type="number" id="NatID" placeholder="  رقم هويتك">
+
+                        <button type="button " onclick="next4()" class="btn btn-primary mt-5"> &nbsp;&nbsp; التــالــي
+                            &nbsp;&nbsp;
+                            &nbsp;&nbsp; <i style="font-size:24px" class="fa"> &#xf104;</i>&nbsp;&nbsp;
+                        </button>
+                        <p class="remail mt-3"> سيتم ادراج البيانات اعلاه بالعقد , الرجاء التأكد من صحتها </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="data" id="section5" style='display:none'>
+            <div class="phone-border brColor">
+                <div class="container phone-screen  mt-5">
+                    <div class="hello2 d-flex flex-column align-items-start  " dir="rtl">
+                        <p class="mt-5">كم عدد الدراجات النارية
+                            اللي ودك تشتـري ؟</p>
+
+                        <div class="remail">
+                            <p>سعر الشـراء يشمل</p>
+                            <p>الدراجة النارية 3300 ريال</p>
+                            <p>اصدار اللوحات 500 ريال</p>
+                            <p>التأمين سنتين 2150 ريال</p>
+                        </div>
+                        <input class="form-controlw mt-3" type="text" id="NumOfbike" placeholder="اختـر العدد من هنا">
+
+
+                        <button type="button " onclick="next5()" class="btn btn-primary mt-5"> &nbsp;&nbsp; التــالــي
+                            &nbsp;&nbsp;
+                            &nbsp;&nbsp; <i style="font-size:24px" class="fa"> &#xf104;</i>&nbsp;&nbsp;
+                        </button>
+                        <p class="remail mt-2">كل دراجة نارية تؤجر بـ 500 ريال شهريا</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="data" id="section6" style='display:none'>
+            <div class="phone-border brColor">
+                <div class="container phone-screen  mt-5">
+                    <div class="hello2 d-flex flex-column align-items-start  " dir="rtl">
+                        <p class="mt-5"> و ّدك نأجرهم على شـركة وحدة
+                            او نوزعهم على شركات متعددة
+                            عشان نقلل الـمخاطر ؟ </p>
+
+                        <div class="remail">
+                            <p>دائما ننصح بتوزيع الدراجات النارية على عدة شـركات لتقليل الـمخاطر </p>
+
+                        </div>
+
+                        <div class="form-check d-block justify-content-center   checkbrd ">
+                            <input class="form-check-input  " type="checkbox" id="askQ" checked>
+                            <label class="form-check-label " for="flexCheckChecked"> &nbsp;&nbsp;
+                                <p class="mr-3"> نعم ارغب بتأجيـر الدراجات النارية على شـركات متفرقة لتقليل المخاطر
+                                </p>
+                            </label>
+
+                        </div>
+
+                        <button type="button" onclick="next6()" class="btn btn-primary mt-5"> &nbsp;&nbsp; التــالــي
+                            &nbsp;&nbsp;
+                            &nbsp;&nbsp; <i style="font-size:24px" class="fa"> &#xf104;</i>&nbsp;&nbsp;
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="data" id="section7" style='display:none'>
+            <div class="phone-border brColor">
+                <div class="container phone-screen  mt-5">
+                    <div class="hello2 d-flex flex-column align-items-start  " dir="rtl">
+                        <p class="mt-5"> إجمالـي الـمبلغ الـمطلوب سداده
+                            5950 ريال</p>
+                        <p class="title3">سوف تؤجر بـ 500 ريال شهريا
+                            لـمدة 18 شهر</p>
+
+                        <div class="remail">
+                            <p>سعر بيع الدراجة بعد انتهاء فترة التأجير يحدد لاحقا</p>
+
+                        </div>
+
+                        <div class="form-check d-block justify-content-center   checkbrd ">
+                            <input class="form-check-input  " type="checkbox" id="okgo" checked>
+                            <label class="form-check-label " for="flexCheckChecked"> &nbsp;&nbsp;
+                                <p class="mr-3"> لقد فهمت ذلك
+                                </p>
+                            </label>
+
+                        </div>
+
+                        <button type="button" onclick="next7()" class="btn btn-primary mt-5"> &nbsp;&nbsp; التــالــي
+                            &nbsp;&nbsp;
+                            &nbsp;&nbsp; <i style="font-size:24px" class="fa"> &#xf104;</i>&nbsp;&nbsp;
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="data" id="section8" style='display:none'>
+            <div class="phone-border brColor">
+                <div class="container phone-screen ">
+                    <div class="hello2 d-flex flex-column align-items-start  " dir="rtl">
+                        <p class="mt-3">الإتفاقية</p>
+                        <p class="police">
+                            بناء على البيانات المدخلة من قبلك تم اعداد هذه الاتفاقية , و عدد اطراف الاتفاقية
+                            اثنان “نحن” نمثل الطرف الاول و “انت” تمثل الطرف الثانـي و تتمثل بنود الاتفاقية
+                            بالتالي : بناء على البيانات المدخلة من قبلك تم اعداد هذه الاتفاقية , و عدد اطراف
+                            الاتفاقية اثنان “نحن” نمثل الطرف الاول و “انت” تمثل الطرف الثانـي و تتمثل بنود
+                            الاتفاقية بالتالي : بناء على البيانات المدخلة من قبلك تم اعداد هذه الاتفاقية , و عدد
+                            اطراف الاتفاقية اثنان “نحن” نمثل الطرف الاول و “انت” تمثل الطرف الثانـي و
+                            تتمثل بنود الاتفاقية بالتالي : بناء على البيانات المدخلة من قبلك تم اعداد هذه بناء على
+                            البيانات المدخلة من قبلك تم اعداد هذه
+                            الاتفاقية , و عدد اطراف الاتفاقية اثنان “نحن” نمثل الطرف الاول و “انت” تمثل
+                            الطرف الثانـي و تتمثل بنود الاتفاقية بالتالي : اطراف الاتفاقية اثنان “نحن” نمثل
+                            الطرف الاول و “انت” تمثل الطرف الثانـي و تتمثل بنود الاتفاقية بالتالي : بناء على
+                            البيانات المدخلة من قبلك تم اعداد هذه الاتفاقية , و عدد اطراف الاتفاقية اثنان
+                            “نحن” نمثل الطرف الاول و “انت” تمثل الطرف الثانـي و تتمثل بنود الاتفاقية
+                        </p>
+
+                        <div class="remail">
+
+
+                        </div>
+
+                        <div class="form-check  d-flex  align-self-center   checkbrd ">
+                            <input class="form-check-input mt-2 " type="checkbox" id="polc" checked>
+                            <label class="form-check-label " for="flexCheckChecked"> &nbsp;&nbsp;
+                                <p class=" mr-3 ">اوافق على بنود الاتفاقية و موافقتي بمثابة توقيع رسمي و معتمد دون
+                                    الحاجة الى توقيع
+                                    المستند يدويا
+                                </p>
+                            </label>
+
+                        </div>
+
+                        <button type="button" onclick="next8()" class="btn btn-primary  mt-2"> &nbsp;&nbsp; التــالــي
+                            &nbsp;&nbsp;
+                            &nbsp;&nbsp; <i style="font-size:24px" class="fa"> &#xf104;</i>&nbsp;&nbsp;
+                        </button>
+
+
+
+                        <p class="remail mt-1 "> سوف يتم ارسال نسخة موقعة من قبلنا على بريدك الالكتروني
+                            التــالــي بعد انهاءك لجميع خطوات التسجيل</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="data" id="section9" style='display:none'>
+            <div class="phone-border brColor">
+                <div class="container phone-screen  mt-5">
+                    <div class="hello2 d-flex flex-column align-items-start  " dir="rtl">
+                        <p class="mt-5"> سعيديـن بثقتــك </p>
+                        <p class="title3"> نأمل تحويل المبلغ الـمستحق 5590 ريال
+                            الى الحساب البنكي لـ</p>
+
+                        <div class="ipan">
+                            <p>مصرف الانماء</p>
+                            <p>شركة الدراجات النارية المعتمد</p>
+                            <p> SA395000000694525500587</p>
+
+                        </div>
+
+                        <div class="form-check d-block justify-content-center mt-3   checkbrd ">
+                            <input class="form-check-input  " type="checkbox" id="iokChecked" checked>
+                            <label class="form-check-label " for="flexCheckChecked"> &nbsp;&nbsp;
+                                <p class="mr-3"> ارفق ايصال التحويل هنا
+                                </p>
+                            </label>
+
+                        </div>
+
+                        <button type="button" onclick="next9()" class="btn btn-primary mt-5"> &nbsp;&nbsp; التــالــي
+                            &nbsp;&nbsp;
+                            &nbsp;&nbsp; <i style="font-size:24px" class="fa"> &#xf104;</i>&nbsp;&nbsp;
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="data" id="section10" style='display:none'>
+            <div class="phone-border brColor">
+                <div class="container phone-screen  mt-5">
+                    <div class="hello2 d-flex flex-column align-items-start  " dir="rtl">
+                        <p class="mt-5"> شكــرا لك </p>
+                        <p class="title3"> جاري التحقق من اتمام خطوات التسجيل</p>
+
+                        <div class="remail ipan mt-0 pt-0">
+                            <p>سيتم ابلاغك عبر البريد الالكتروني عند الانتهاء من المراجعة</p>
+
+
+                        </div>
+
+                        <p class="mt-5  endtx">تستطيع تسجيل الدخـول و الاطلاع علـى المعلومات
+                            بعد التحقق من اتمام خطوات التسجيل</p>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+    <div id="controls" style="display: none;">
+
+
+        <div class="continer" id="clickForCom">
+            <div class="d-flex  justify-content-center  w-90  bnr" dir="rtl">
+                <div class="d-flex  justify-content-between  ">
+                    <p>لوحـة التحكــم</p>
+                    <p>تعـهـيد</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="data" id="Csection">
+            <div class="phone-border   ">
+                <div class="container phone-screen    ">
+                    <div class="row h-100    w-100 mt-3" dir="rtl">
+                        <div class="col-md-3    ">
+                            <div class="menu ">
+                                <div class="  d-flex text-align-right justify-content-around  pt-5 " dir="rtl">
+                                    <i class="fas fa-bars menu-icon"></i>
+                                    <img src="/Annotation_2024-06-09_184912-removebg-preview.png" class="img">
+                                </div>
+                                <div class="bordermenu mt-5" id="mMain">
+                                    الرئيسية
+                                </div>
+                                <div class="bordermenu" id="mUsers">
+                                    العملاء
+                                </div>
+                                <div class="bordermenu" id="mBikes">
+                                    الدراجات النارية
+                                </div>
+                                <div class="bordermenu" id="mSetting">
+                                    اعدادات
+                                </div>
+                                <div class="bordermenu" id=" ">
+                                    -
+                                </div>
+                                <div class="bordermenu" id=" ">
+                                    -
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-9 d-flex  align-self-center  text-align-right">
+                            <div class="mb-5" id="main">
+                                <table class="table table-borderless pb-5  " dir="rtl">
+                                    <tr>
+
+                                        <th scope="row">عدد العمــلاء الـمسجليـن</th>
+                                        <td id="NumOfUsers">990</td>
+                                    </tr>
+                                    <tr>
+
+                                        <th scope="row">عدد العملاء الذين اشتروا</th>
+                                        <td id="NumOfUsersbuy">118</td>
+                                    </tr>
+                                    <tr>
+
+                                        <th scope="row">عدد الـدراجــات الناريــة</th>
+                                        <td id="NumOfbikes">590</td>
+                                    </tr>
+                                    <tr>
+
+                                        <th scope="row "> اجمالـي قيمة الدراجات النارية </th>
+                                        <td id="TotalPrice">3.510.500</td>
+
+                                    </tr>
+
+                                </table>
+                                <div class="space"></div>
+                            </div>
+
+
+
+                            <div class="mb-5" id="users" style="display: none;">
+                                <input type="search" class="form-control w-50 m-2" name="search"
+                                    placeholder="ابحث بالعملاء">
+
+
+
+
+                                <table class="table custable table-borderless text-align-right">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">اسم العميل</th>
+                                            <th scope="col">الخطـوات</th>
+                                            <th scope="col">عدد الدراجات</th>
+                                            <th scope="col">تاريخ التسجيل</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="GetUserInfo" class="overflow-hidden">
+                                        <tr>
+                                            <th scope="row">محمد احمد عبدالله</th>
+                                            <td>مكتمل</td>
+                                            <td>3</td>
+                                            <td>28-09-2023</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <p class="info">من خلال هذه الصفحة عبر النقر على اسم العميل تستطيع اضافة و تعديل بيانات
+                                    لوحة
+                                    المعلومات الخاصه بالعميل
+                                    مثل : عدد الدراجات النارية,مبلغ الايجار,الخ...</p>
+                            </div>
+
+
+
+
+                            <div class="Csection3" id="bikes" dir="rtl" style="display: none;">
+                                <p class="titsection3">عدد الدراجات النارية الـمتاحة للشراء</p>
+                                <p class="psection3" >1890</p>
+                                <p class="titsection3">اجمالي ايجارات الدراجات النارية الشهرية</p>
+                                <p class="psection3">582.000</p>
+                                <div class="space"></div>
+                            </div>
+
+
+
+                            <div class="Csection4" id="setting" dir="rtl" style="display: none;">
+                                <button type="button" class="btn btn-outline-primary">الـمستخدمين</button>
+                                <button type="button" class="btn btn-outline-primary">نص الإتفاقية</button>
+                                <button type="button" class="btn btn-outline-primary">اعتماد ايصال التحويل</button>
+                                <button type="button" class="btn btn-outline-primary">اعدادات عامة</button>
+                                <div class="table-responsive mt-3">
+                                    <table class="table userTable table-borderless  ">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col"> الـمستخدم </th>
+                                                <th scope="col"> البريد الالكتروني</th>
+                                                <th scope="col"> صلاحية الدخول </th>
+                                                <th scope="col"> </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="GetUserInfo2">
+                                            <tr>
+                                                <th scope="row">محمد احمد عبدالله</th>
+                                                <td>com.gmail@ahmedda</td>
+                                                <td>نعم</td>
+                                                <td class="deleteUser" >حذف المستخدم</td>
+                                            </tr>
+                                             
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="space"></div>
+                            </div>
+
+
+
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <div id="login" style="display: none;" class=" mt-3">
+        <div class="continer" id="clickForCom">
+            <div class="d-flex  justify-content-center  w-90  bnr" dir="rtl">
+                <div class="d-flex  justify-content-between ">
+                    <p>تسجيل الدخول</p>
+                    <p>تعـهـيد</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <div class="row justify-content-center mt-5">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Login</h4>
+                            </div>
+                            <div class="card-body">
+                                <form id="loginForm">
+                                    <div class="form-group">
+                                        <label for="Femail">Email</label>
+                                        <input type="text" class="form-control" id="Femail"
+                                            placeholder="Enter your email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control" id="password"
+                                            placeholder="Enter your password">
+                                        <small class="form-text text-muted">IF this your frist log in enter code send to
+                                            mail</small>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Login</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="profile" style="display: none;">
+        <div class="continer">
+            <div class="d-flex  justify-content-center  w-90  bnr" dir="rtl">
+                <div class="d-flex  justify-content-between ">
+                    <p>لوحـة التحكــم الخاصة بالعميل</p>
+                    <p>تعـهـيد</p>
+                </div>
+            </div>
+            <div>
+                <div class="data" id="Csection">
+                    <div class="phone-border   ">
+                        <div class="container phone-screen    ">
+                            <div class="row  mt-3  " dir="rtl">
+
+                                <h3 class="head">مرحبا </h3> &nbsp;&nbsp;
+                                <h3 class="head" id="UserName"> عبد الله </h3>
+
+                                <div class="d-flex w-100 justify-content-center ">
+                                    <div class="cont">
+                                        <div class="d-flex j justify-content-around">
+                                            <p>عدد الدراجات النارية </p>
+                                            <p id="getNumOfbike">9</p>
+                                        </div>
+                                        <div class="d-flex j justify-content-around">
+                                            <p> عدد العقود </p>
+                                            <p> 02</p>
+                                        </div>
+                                        <div class="d-flex j justify-content-around ">
+                                            <p>الايجارات الـمدفوعـة </p>
+                                            <p> 75.240</p>
+                                        </div>
+                                    </div>
+                                    <div class="cont2">
+                                        <p>رقم العقــد</p>
+                                        <p>251223006</p>
+                                        <p>عدد الدراجات النارية</p>
+                                        <p>15</p>
+                                        <p>عدد دفعات الايجار الـمتبقية</p>
+                                        <p>16</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="btn ">
+
+                                <button class=" btn btn-primary"> &plus;&nbsp;&nbsp;&nbsp;تقدر تأجر دراجات اضافية من هنا
+                                    &nbsp;</button>
+                            </div>
+
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>

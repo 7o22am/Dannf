@@ -1,0 +1,218 @@
+.body{
+   
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  
+}
+ .form-controlw{
+  
+ 
+  border: 1px solid rgb(39, 39, 241);
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(39, 39, 241);
+  width: 100%;
+ }
+ 
+ input:focus {
+  outline: none;
+ align-items: center;
+    border: 2px solid #151d85;
+}
+ .form-controlw::placeholder{
+  color: blue;
+   font-size: 7px;
+   align-items: center;
+ }
+
+.title{
+    text-align: right;
+    color: blue;
+}
+ 
+.box1 {
+    width: 155px;
+    height: 350px;
+    border-radius: 20px;  
+    background-color: rgb(98, 98, 228);
+  }
+  
+  .box2 {
+    width: 160px;
+    height: 360px;
+    z-index: 1;
+    border-radius: 20px;
+    background-color: blue;
+    
+  }
+  
+  .transform-rotate-45 {
+    transform: rotate(45deg);
+    margin: -10px;
+  }
+  .container2 {
+    padding-top: 50px;
+   overflow: hidden;
+  }
+  .phone-border {
+    width: 280px;
+    height: 550px;
+    border: 10px solid #000;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .phone-screen {
+    width: 280px;
+    height: 550px;
+    background-color: #fff;
+    position: absolute;
+    
+  }
+  .title2{
+    text-align: right;
+    color: blue;
+    line-height: .1;
+   padding-top: 2%;
+   padding-left: 50px;
+    display: flex;
+  }
+  .title2 p{
+  
+    font-size: xx-small;
+  }
+  .img{
+     width: 25%;
+    
+  }
+  .hello{
+    font-style: italic;
+  }
+
+  .show{
+    border-radius: 20px;  
+  background-image: url(/Annotation_2024-06-09_184912-removebg-preview.png );
+  background-size: 50%;
+  background-repeat:  no-repeat;
+  background-position: center;
+  background-color: rgb(2, 2, 219);
+  filter: brightness(0.8) contrast(1.2) saturate(0.5);
+   color: white;
+   text-align: center;
+  }
+  .show p{
+    line-height: .5;
+  }
+
+
+  .bnr{
+    font-size: 25px;
+    color: blue;
+    border: 2px solid ;
+    border-radius: 30px;
+ 
+  }
+  .bnr div{
+    width: 90%;
+  }
+
+ 
+
+ .data{  
+  height: 450px;
+  overflow: hidden;
+  margin-left: 22%;
+ margin-top: 5%;
+  
+ }
+
+.brColor{
+  border: 10px solid blue;
+}
+.hello2{
+
+font-weight: bold;
+font-style: italic;
+color: blue;
+text-align: right;
+}
+
+.btn1{
+   
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+ 
+}
+ 
+.remail {
+font-size:10px;
+ 
+}
+
+.remail p{
+  margin-top: 10px;
+  font-size:8px;
+  line-height: .1;
+  font-weight: 100;
+  }
+a:hover{
+  cursor:  pointer;
+}
+
+.checkbrd{
+  font-size: 5px;
+  border: 1px solid rgb(39, 39, 241);
+  border-radius: 10px;
+  box-shadow: 0 0 1px rgba(39, 39, 241);
+  height: 30px;
+ width: 100%;
+ 
+ padding-bottom: 6px;
+ padding-right: 10px;
+}
+
+
+.title3{
+font-size: x-small;
+}
+
+.police{
+  font-size: small;
+  font-weight: 200;
+  font-style: normal;
+
+
+  border: 2px solid rgb(225, 225, 248);
+    border-radius: 15px;
+    padding: 2px;
+    max-height: 220px;
+    overflow-x: hidden; /* Horizontal scrollbar */
+  overflow-y: scroll; /* No vertical scrollbar */
+
+}
+p::-webkit-scrollbar{
+  color: blue;
+}
+
+ .ipan{
+  font-size: small;
+  font-weight: 200;
+  font-style: normal;
+  line-height: .000000001;
+ 
+ }
+
+ .endtx{
+font-size: small;
+font-weight: 100;
+font-style: italic;
+color: rgb(194, 186, 186);
+
+ }
+
+ 

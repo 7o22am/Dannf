@@ -1,0 +1,226 @@
+#controls {
+  .deleteUser{
+    color: red;
+    font-weight: 100;
+    font-size: x-small;
+    font-style: italic;
+  }
+  .bnr {
+    font-size: 25px;
+    color: blue;
+    border: 2px solid;
+    border-radius: 30px;
+
+  }
+
+  .bnr div {
+    width: 90%;
+  }
+
+
+  .data {
+    height: 450px;
+    overflow: hidden;
+    margin-left: 16%;
+    margin-top: 5%;
+
+  }
+
+
+  .phone-border {
+    width: 70%;
+    height: 550px;
+    border: 10px solid #000;
+    border-radius: 30px;
+    position: relative;
+    overflow-x: scroll;
+    /* Horizontal scrollbar */
+    overflow-y: scroll;
+  }
+
+  ::-webkit-scrollbar {
+    color: blue;
+  }
+
+  .phone-screen {
+    width: 100%;
+    height: 90%;
+    background-color: #fff;
+    position: absolute;
+
+  }
+
+  .menu {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    border-radius: 15px;
+    box-sizing: border-box;
+  }
+
+  .bordermenu {
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: right;
+    padding-right: 10px;
+    background-color: white;
+    font-size: 70%;
+  }
+
+  .bordermenu:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px white;
+  }
+
+  .img {
+    width: 15%;
+    height: 15%;
+  }
+
+  .menu-icon {
+    font-size: 24px;
+    /* Adjust the size as desired */
+    color: white;
+  }
+
+  .menu-icon:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+  }
+
+  .info {
+    box-sizing: border-box;
+    width: 70%;
+    height: 100px;
+    font-size: x-small;
+    font-weight: 200;
+    text-align: right;
+  }
+
+  .custable {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    text-align: right;
+    font-size: small;
+    border: 2px solid black;
+  }
+ 
+ 
+  .Csection3 {
+
+    text-align: right;
+  }
+
+  .titsection3 {
+    font-size: larger;
+
+  }
+
+  .psection3 {
+    font-size: larger;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: blue;
+    font-weight: bold;
+    padding-right: 20px;
+  }
+
+  .space {
+    height: 150px;
+  }
+
+  .userTable {
+    font-size: small;
+  }
+}
+
+#profile {
+
+
+  .data {
+    height: 450px;
+    overflow: hidden;
+    margin-left: 16%;
+    margin-top: 5%;
+
+  }
+
+
+  .phone-border {
+    width: 70%;
+    height: 550px;
+    border: 10px solid #000;
+    border-radius: 30px;
+    position: relative;
+    overflow-x: scroll;
+    /* Horizontal scrollbar */
+    overflow-y: scroll;
+  }
+
+  ::-webkit-scrollbar {
+    color: blue;
+  }
+
+  .phone-screen {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+
+  }
+
+.cont{
+  margin-top: 15px;
+  height:100%;
+  width: 40%;
+  background-color: rgb(50, 10, 228);
+  margin-left: 10px;
+  text-align: right;
+  border-radius: 20px;
+  padding: 15px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.cont p{
+ font-size: x-small;
+ line-height: 1;
+}
+.cont2 p{
+  font-size: x-small;
+ 
+ 
+ }
+.cont2{
+  box-sizing: border-box;
+  padding: 15px;
+  margin-top: 15px;
+  height:100%;
+  width: 40%;
+  border: 2px solid  rgb(50, 10, 228);
+  margin-left: 10px;
+  text-align: right;
+  border-radius: 20px;
+  color: rgb(50, 10, 228);
+ 
+ 
+}
+
+.head{
+  height: 50px;
+  color: rgb(50, 10, 228);
+}
+.btn {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+
+}
